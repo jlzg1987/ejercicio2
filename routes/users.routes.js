@@ -8,7 +8,7 @@ router.get('/',(req,res)=>{
 
 router.post('/',  (req, res) => {
 const  body =req.body;
-console.log (res.status(200).json({body}))
+res.status(200).json(body)
 });
 
 module.exports=router;
